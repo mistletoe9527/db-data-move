@@ -84,18 +84,18 @@ public @interface Field {
 
 public @interface Condition {
 
- String operator() default "="; //操作符号
+    String operator() default "="; //操作符号
 
- String before() default ""; // 迁移之前的字段名
+    String before() default ""; // 迁移之前的字段名
 
- String after() default ""; //迁移之后的字段名
+    String after() default ""; //迁移之后的字段名
 
- boolean insert() default true; //是否需要插入
+    boolean insert() default true; //是否需要插入
 
- boolean select() default true; //是否需要查询
+    boolean select() default true; //是否需要查询
 
- boolean unique() default false; //唯一字段
- 
+    boolean unique() default false; //唯一字段
+
 }
 
 
