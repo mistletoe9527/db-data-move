@@ -15,11 +15,12 @@ Fast and convenient use of annotations for data transfer
 项目使用
 
 1.mavan jar
-    <dependency>
-    <groupId>com.potlid</groupId>
-    <artifactId>db-data-move-task</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    </dependency>
+
+        <dependency>
+        <groupId>com.potlid</groupId>
+        <artifactId>db-data-move-task</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        </dependency>
 
 2.配置lister 或者配置一个bean
 
