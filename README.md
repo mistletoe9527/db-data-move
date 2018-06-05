@@ -4,11 +4,7 @@ Fast and convenient use of annotations for data transfer
 
 随着业务的增长，或者一个业务的扩展兼容，往往会涉及的数据的迁移。
 
-原来的数据迁移方式：1.查询数据
-
-                2.数据处理
-
-                3.数据插入
+原来的数据迁移方式：1.查询数据 2.数据处理 3.数据插入
 
 大部分的流程都是上面的流程，数据插入可能是直接调用dao去做插入操作，或者调用服务插入数据。
 
@@ -53,6 +49,7 @@ public class Test {
 @Transfer 类注解
 
 public @interface Transfer {
+
     String before() default ""; //迁移之前的表名字
 
     String after() default "";//迁移之后的表明
@@ -69,6 +66,7 @@ public @interface Transfer {
 @Fileld 字段注解
 
 public @interface Field {
+
     String before() default ""; //迁移之前的字段名
 
     String after() default "";//迁移之后的字段名
@@ -85,6 +83,7 @@ public @interface Field {
 @Conditon 字段注解 表示where 后面的那些条件
 
 public @interface Condition {
+
  String operator() default "="; //操作符号
 
  String before() default ""; // 迁移之前的字段名
