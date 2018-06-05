@@ -95,6 +95,7 @@ public @interface Condition {
  boolean select() default true; //是否需要查询
 
  boolean unique() default false; //唯一字段
+ 
 }
 
 
