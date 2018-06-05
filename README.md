@@ -33,14 +33,16 @@ Fast and convenient use of annotations for data transfer
 
 4.描述一个bean
 
-@Transfer(beforeDataSource = "datasource1" ,afterDataSource = "datasource2")
-public class Test {
- @Field
- private Integer id;
+        @Transfer(beforeDataSource = "datasource1" ,afterDataSource = "datasource2")
+        public class Test {
 
- @Field
- private String userName;
-}
+        @Field
+        private Integer id;
+
+        @Field
+        private String userName;
+        
+        }
 
 
 这个bean 将会吧 spring容器里名字为datasource1的test表的 id 和user_name 字段 迁移到 datasource2的test表的 id 和user_name
